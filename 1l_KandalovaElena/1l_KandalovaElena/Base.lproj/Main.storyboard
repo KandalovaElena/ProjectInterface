@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Form Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginFormController" customModule="_l_KandalovaElena" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="свчение-моря" translatesAutoresizingMaskIntoConstraints="NO" id="1vk-mA-qPY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzU-Xs-7el">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите ваш пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeW-bM-iIJ">
+                                        <rect key="frame" x="96" y="70" width="222" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8v-qa-aNM">
+                                        <rect key="frame" x="32.666666666666664" y="150" width="48.999999999999993" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r95-PV-tGL">
+                                        <rect key="frame" x="32.666666666666664" y="231" width="59.999999999999993" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GW7-Ch-fhs">
+                                        <rect key="frame" x="121.66666666666669" y="150" width="150" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="ed2-xL-EMp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nK9-Ah-HCM">
+                                        <rect key="frame" x="162" y="325" width="90" height="35"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="WMZ-we-NOi"/>
+                                            <constraint firstAttribute="height" constant="35" id="doi-GK-pxn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Войти"/>
+                                        <connections>
+                                            <action selector="butoonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n2I-yj-hOX"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="128-IK-hrt">
+                                        <rect key="frame" x="121.66666666666669" y="231" width="150" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="rh9-lb-so2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jeW-bM-iIJ" firstAttribute="top" secondItem="AzU-Xs-7el" secondAttribute="top" constant="70" id="0uE-pC-Pc3"/>
+                                    <constraint firstItem="128-IK-hrt" firstAttribute="leading" secondItem="GW7-Ch-fhs" secondAttribute="leading" id="4D5-aC-upT"/>
+                                    <constraint firstItem="128-IK-hrt" firstAttribute="top" secondItem="r95-PV-tGL" secondAttribute="top" id="5UB-1O-l5K"/>
+                                    <constraint firstAttribute="trailing" secondItem="jeW-bM-iIJ" secondAttribute="trailing" constant="100" id="I5p-RV-I2J"/>
+                                    <constraint firstAttribute="bottom" secondItem="nK9-Ah-HCM" secondAttribute="bottom" constant="50" id="RAQ-ps-hAY"/>
+                                    <constraint firstItem="nK9-Ah-HCM" firstAttribute="centerX" secondItem="AzU-Xs-7el" secondAttribute="centerX" id="RFo-Tg-hU5"/>
+                                    <constraint firstItem="r95-PV-tGL" firstAttribute="top" secondItem="U8v-qa-aNM" secondAttribute="bottom" constant="60" id="fQX-DZ-Rxc"/>
+                                    <constraint firstItem="GW7-Ch-fhs" firstAttribute="top" secondItem="U8v-qa-aNM" secondAttribute="top" id="jQD-S0-93D"/>
+                                    <constraint firstItem="r95-PV-tGL" firstAttribute="leading" secondItem="U8v-qa-aNM" secondAttribute="leading" id="mvU-0P-VF2"/>
+                                    <constraint firstItem="nK9-Ah-HCM" firstAttribute="top" secondItem="128-IK-hrt" secondAttribute="bottom" constant="60" id="nfl-Py-39y"/>
+                                    <constraint firstItem="GW7-Ch-fhs" firstAttribute="leading" secondItem="U8v-qa-aNM" secondAttribute="trailing" constant="40" id="pPA-AL-3zv"/>
+                                    <constraint firstItem="U8v-qa-aNM" firstAttribute="top" secondItem="jeW-bM-iIJ" secondAttribute="top" constant="80" id="qAy-S4-olM"/>
+                                    <constraint firstItem="U8v-qa-aNM" firstAttribute="centerX" secondItem="AzU-Xs-7el" secondAttribute="centerX" constant="-150" id="shU-9f-XxH"/>
+                                    <constraint firstItem="jeW-bM-iIJ" firstAttribute="centerX" secondItem="AzU-Xs-7el" secondAttribute="centerX" id="w6Y-6q-Npa"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1vk-mA-qPY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3C4-8S-08s"/>
+                            <constraint firstAttribute="trailing" secondItem="1vk-mA-qPY" secondAttribute="trailing" id="GKj-WZ-T9a"/>
+                            <constraint firstItem="2Gw-L8-qh0" firstAttribute="trailing" secondItem="AzU-Xs-7el" secondAttribute="trailing" id="IwN-Mf-d12"/>
+                            <constraint firstItem="1vk-mA-qPY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P4O-8d-8Xz"/>
+                            <constraint firstItem="AzU-Xs-7el" firstAttribute="leading" secondItem="2Gw-L8-qh0" secondAttribute="leading" id="RSG-ut-LJH"/>
+                            <constraint firstItem="AzU-Xs-7el" firstAttribute="top" secondItem="2Gw-L8-qh0" secondAttribute="top" id="Y11-Ok-Foq"/>
+                            <constraint firstItem="2Gw-L8-qh0" firstAttribute="bottom" secondItem="AzU-Xs-7el" secondAttribute="bottom" id="gHE-cF-6Ig"/>
+                            <constraint firstAttribute="bottom" secondItem="1vk-mA-qPY" secondAttribute="bottom" id="wm5-A2-im7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Gw-L8-qh0"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="GW7-Ch-fhs" id="WIh-cN-mzm"/>
+                        <outlet property="paswordTextField" destination="128-IK-hrt" id="WaW-4W-DhF"/>
+                        <outlet property="scrollView" destination="AzU-Xs-7el" id="LLO-Fa-Fvk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="86.383928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="свчение-моря" width="593" height="381"/>
+    </resources>
+</document>
